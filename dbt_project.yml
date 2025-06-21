@@ -75,6 +75,3 @@ seeds:
      {% else %} invalid_database
      {% endif %}
     +schema: raw
-
-    
-
