@@ -1,5 +1,7 @@
 select 
+{{ dbt_utils.generate_surrogate_key(['order_id', 'r.customer_name']) }}as order_date_id,
 r.order_id,
+du.customer_name,
 d.category_id,
 du.customer_id,
 ci.city_id,
